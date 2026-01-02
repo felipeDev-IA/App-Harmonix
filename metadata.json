@@ -1,0 +1,7 @@
+{
+  "name": "Harmonix - Music Theory Trainer",
+  "description": "An interactive music theory training app featuring piano practice, interval recognition, scale builders, and harmonic field exercises with real-time audio feedback and gamified progress.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
