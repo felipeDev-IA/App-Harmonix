@@ -43,8 +43,8 @@ const Dashboard: React.FC<DashboardProps> = ({ stats, onSelectCategory, onSelect
       <section className="bg-indigo-600 rounded-3xl p-6 text-white shadow-xl shadow-indigo-100 relative overflow-hidden">
         <div className="relative z-10 space-y-2">
           <div className="flex items-center gap-2">
-             <span className="text-xl">✨</span>
-             <h3 className="font-bold text-indigo-100 uppercase text-xs tracking-widest">Dica da IA</h3>
+            <span className="text-xl">✨</span>
+            <h3 className="font-bold text-indigo-100 uppercase text-xs tracking-widest">Dica da IA</h3>
           </div>
           <p className="text-lg font-medium leading-snug max-w-md">"{dailyTip}"</p>
         </div>
@@ -87,8 +87,8 @@ const Dashboard: React.FC<DashboardProps> = ({ stats, onSelectCategory, onSelect
         <div className="flex items-end justify-between h-32 gap-2">
           {[40, 60, 30, 90, 45, 20, 10].map((h, i) => (
             <div key={i} className="flex-1 group relative">
-              <div 
-                className={`w-full rounded-t-lg bg-slate-100 group-hover:bg-indigo-400 transition-all duration-500`} 
+              <div
+                className={`w-full rounded-t-lg bg-slate-100 group-hover:bg-indigo-400 transition-all duration-500`}
                 style={{ height: `${h}%` }}
               />
               <div className="mt-2 text-[10px] text-center font-bold text-slate-400 uppercase">

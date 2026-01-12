@@ -2,8 +2,12 @@
 import { createClient } from '@supabase/supabase-js';
 import { UserStats } from '../types';
 
-const SUPABASE_URL = 'https://qtzeldxfcilwrjrvgwla.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_OcVNj5QF8CwQXDpumDkVUQ_bSR78-IN';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  console.error('Supabase credentials missing in .env.local');
+}
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
